@@ -38,6 +38,8 @@ _Usage Example:_
 gx_set_video_mode 13h
 ```
 
+---
+
 #### gx_set_video_mode_gx
 Sets the video mode ```13h``` - 320x200 256 color graphics (MCGA,VGA).
 
@@ -47,6 +49,8 @@ _Usage Example:_
 ```
 gx_set_video_mode_gx
 ```
+
+---
 
 #### gx_set_video_mode_txt 
 Sets the video mode ```03h``` - 80x25 Monochrome text (MDA,HERC,EGA,VGA).
@@ -58,6 +62,7 @@ _Usage Example:_
 gx_set_video_mode_txt
 ```
 
+---
 
 #### gx_pixel x, y, color
 Sets a pixel using Video Memory. Relies upon having the Video Memory star address set in the ```ES``` register. Note that you don't have to do that if you initialised the Graphics mode using: ```gx_set_video_mode_gx``` and you haven't changed the value in the ```ES``` register.
@@ -70,6 +75,8 @@ _Usage Example:_
 ```
 gx_pixel 10, 10, 47 ; X: 10, Y: 10, Color: 47 (Green)
 ```
+
+---
 
 #### gx_pixel_bios x, y, color
 Sets a pixel using the BIOS ```int 10h``` API.  
@@ -121,6 +128,8 @@ _Usage Example:_
 movv gx_x1, gx_x2
 ```
 
+---
+
 #### cmpv var1, var2, register
 Compares two memory variables using a register for temprary storage.
 
@@ -128,6 +137,8 @@ _Usage Example:_
 ```
 cmpv gx_x1, gx_x2, ax ; Compares gx_x1 and gx_x2 using the AX register
 ```
+
+---
 
 #### addv to, from
 Adds two memory variables.
@@ -137,6 +148,8 @@ _Usage Example:_
 addv gx_x1, gx_x2, ax
 ```
 
+---
+
 #### subv to, from
 Subtracts two memory variables.
 
@@ -145,6 +158,8 @@ _Usage Example:_
 subv gx_x1, gx_x2, ax
 ```
 
+---
+
 #### return code
 Returns control to DOS returning the specified in the first argument code.
 
@@ -152,6 +167,8 @@ _Usage Example:_
 ```
 return 0
 ```
+
+---
 
 #### save_registers
 Pushes ```AX```, ```BX```, ```CX``` and ```DX``` to the stack.  
@@ -167,6 +184,8 @@ mov bx, 50
 restore_registers
 ; AX is now 10 and BX is now 20
 ```
+
+---
 
 #### restore_registers
 Pops ```AX```, ```BX```, ```CX``` and ```DX``` from the stack.
