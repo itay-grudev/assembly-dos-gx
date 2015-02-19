@@ -41,7 +41,7 @@ gx_set_video_mode macro mode
   int 10h
 endm
 
-; Star Address of Video memory
+; Start Address of Video memory
 GX_START_ADDR dw 0a000h
 
 ; Explicitly sets the MS-DOS BIOS Video Mode
