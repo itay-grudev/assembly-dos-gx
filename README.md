@@ -1,5 +1,5 @@
-Assembly DOS GX
-===============
+Assembly DOS Graphics Library & Demo
+====================================
 
 This library + the demo I created can help students studying Computer Architecture in their Coursework. You can use it jusr for reference or use all of the Graphics macros and functions I created for you.
 
