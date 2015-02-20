@@ -109,8 +109,8 @@ _Usage Example:_
 ; To draw a Green Square, 10 pixels wide.
 mov gx_x1, 10 ; X1 = 10
 mov gx_y1, 10 ; Y1 = 10
-mov gx_x2, 10 ; X2 = 20
-mov gx_y2, 10 ; Y2 = 20
+mov gx_x2, 20 ; X2 = 20
+mov gx_y2, 20 ; Y2 = 20
 mov gx_color, 47 ; Color = 10
 call gx_rect
 ```
