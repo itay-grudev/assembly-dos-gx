@@ -64,10 +64,10 @@ endm
 
 ; Restore registers from stack
 restore_registers macro
-  push dx
-  push cx
-  push bx
-  push ax
+  pop dx
+  pop cx
+  pop bx
+  pop ax
 endm
 
 ; Checks for a keypress; Sets ZF if no keypress is available
